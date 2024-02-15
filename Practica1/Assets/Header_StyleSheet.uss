@@ -1,5 +1,8 @@
-.hola {
-    background-color: rgba(204, 129, 55, 0.84);
-    height: auto;
+.header_StyleSheet {
+    background-color: rgb(33, 125, 29);
+    border-top-left-radius: 58px;
+    border-bottom-left-radius: 58px;
+    border-top-right-radius: 58px;
+    border-bottom-right-radius: 58px;
     flex-grow: 1;
 }

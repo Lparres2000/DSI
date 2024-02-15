@@ -1,0 +1,15 @@
+.footer {
+    border-left-color: rgb(190, 33, 33);
+    border-right-color: rgb(190, 33, 33);
+    border-top-color: rgb(190, 33, 33);
+    border-bottom-color: rgb(190, 33, 33);
+    border-left-width: 44px;
+    border-right-width: 44px;
+    border-top-width: 44px;
+    border-bottom-width: 44px;
+    border-top-left-radius: 103px;
+    border-bottom-left-radius: 103px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 103px;
+    flex-grow: 1;
+}
