@@ -1,7 +1,52 @@
 .body {
     flex-grow: 1;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(56, 56, 56);
     flex-direction: column;
     align-items: stretch;
     justify-content: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.selector {
+    flex-direction: row;
+}
+
+.title {
+    flex-grow: 0;
+    background-color: rgba(0, 0, 0, 0);
+    justify-content: center;
+    width: auto;
+    height: 74px;
+    -unity-font: url('project://database/Assets/images/Bulland-Regular.ttf?fileID=12800000&guid=c319f639c358d5b4fa638d2df20b7f15&type=3#Bulland-Regular');
+    margin-bottom: 10px;
+}
+
+.bgpj {
+    flex-grow: 3;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url('project://database/Assets/images/azul.png?fileID=2800000&guid=40f1ac67e55054448abb101273e8465b&type=3#azul');
+    overflow: visible;
+    flex-wrap: nowrap;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-items: stretch;
+    justify-content: center;
+    align-self: auto;
+}
+
+.gogoname {
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+    align-items: stretch;
+    align-self: center;
+    justify-content: center;
+    padding-top: 33px;
+    -unity-font-definition: initial;
+    -unity-font: url('project://database/Assets/images/8-bit%20fortress.ttf?fileID=12800000&guid=1b266afd63ae22341925a3c7365ba5d9&type=3#8-bit fortress');
+    font-size: 11px;
 }
