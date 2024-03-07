@@ -46,5 +46,8 @@ public class Practica2 : MonoBehaviour
         bgPj.ForEach(element => element.style.backgroundImage = null);
 
 
+        List<VisualElement> gogoBgList = rootVE.Query(className: "bgpj").ToList();
+        gogoBgList.ForEach(element => element.Q("Gogo").AddManipulator(new GogoManipulator()));
+
     }
 }
