@@ -52,3 +52,22 @@
     -unity-font: url('project://database/Assets/images/8-bit%20fortress.ttf?fileID=12800000&guid=1b266afd63ae22341925a3c7365ba5d9&type=3#8-bit fortress');
     font-size: 11px;
 }
+
+.titleText {
+    align-self: center;
+    justify-content: flex-start;
+    align-items: stretch;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(238, 238, 238);
+    -unity-font: url('project://database/Assets/images/Bulland-Regular.ttf?fileID=12800000&guid=c319f639c358d5b4fa638d2df20b7f15&type=3#Bulland-Regular');
+    -unity-font-definition: initial;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-left: 0;
+    padding-right: 0;
+}

@@ -3,7 +3,7 @@
     <ui:VisualElement name="body" class="body">
         <ui:VisualElement name="Title" class="title">
             <ui:Button text="Button" display-tooltip-when-elided="true" style="margin-left: 30px;" />
-            <ui:Label tabindex="-1" text="SELECT YOUR GOGO" display-tooltip-when-elided="true" enable-rich-text="true" name="Title" style="align-self: center; justify-content: flex-start; align-items: stretch; font-size: 30px; background-color: rgba(0, 0, 0, 0); color: rgb(238, 238, 238); -unity-font: url(&apos;project://database/Assets/images/Bulland-Regular.ttf?fileID=12800000&amp;guid=c319f639c358d5b4fa638d2df20b7f15&amp;type=3#Bulland-Regular&apos;); -unity-font-definition: initial; margin-top: 0; padding-top: 0; padding-bottom: 0; margin-bottom: 0; margin-left: 70px; margin-right: 70px; padding-left: 0; padding-right: 0;" />
+            <ui:Label tabindex="-1" text="SELECT YOUR GOGO" display-tooltip-when-elided="true" enable-rich-text="true" name="TitleText" class="titleText" />
             <ui:Button text="Button" display-tooltip-when-elided="true" style="margin-right: 30px;" />
         </ui:VisualElement>
         <ui:VisualElement name="Selector" class="selector" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row;">

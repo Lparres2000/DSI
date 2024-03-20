@@ -49,5 +49,9 @@ public class Practica2 : MonoBehaviour
         List<VisualElement> gogoBgList = rootVE.Query(className: "bgpj").ToList();
         gogoBgList.ForEach(element => element.Q("Gogo").AddManipulator(new GogoManipulator()));
 
+        Label title = rootVE.Query<Label>(className: "titleText");
+        title.text = @"<b><gradient=""Gradiente"">SELECT YOUR GOGO</gradient></b>";
+
+
     }
 }
