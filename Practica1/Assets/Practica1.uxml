@@ -8,7 +8,7 @@
         </ui:VisualElement>
         <ui:VisualElement name="Selector" class="selector" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row;">
             <ui:VisualElement name="Option1" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
-                <ui:VisualElement name="Name" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/images/rojo2.png?fileID=2800000&amp;guid=9829c6e8cbd2fa3449abc875eb768747&amp;type=3#rojo2&apos;); -unity-background-scale-mode: scale-to-fit; padding-top: 20px;">
+                <ui:VisualElement name="Name" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/images/CajaInfoGogo.png?fileID=2800000&amp;guid=927c38dd07c787f478d376d9057e253e&amp;type=3#CajaInfoGogo&apos;); -unity-background-scale-mode: scale-to-fit; padding-top: 20px;">
                     <ui:Label tabindex="-1" text="HELLY" display-tooltip-when-elided="true" name="Label" class="gogoname" style="padding-top: 0;" />
                 </ui:VisualElement>
                 <ui:VisualElement name="Bg" class="bgpj" style="flex-grow: 5; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/images/rojo.png?fileID=2800000&amp;guid=89cdf343c8414b84aa80b1fbfa045c9c&amp;type=3#rojo&apos;);">
@@ -16,7 +16,7 @@
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement name="Option2" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
-                <ui:VisualElement name="Name" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/images/azul2.png?fileID=2800000&amp;guid=0024c9dc58c293041b68ffc56d7fbac0&amp;type=3#azul2&apos;); -unity-background-scale-mode: scale-to-fit; padding-top: 20px;">
+                <ui:VisualElement name="Name" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/images/CajaInfoGogo.png?fileID=2800000&amp;guid=927c38dd07c787f478d376d9057e253e&amp;type=3#CajaInfoGogo&apos;); -unity-background-scale-mode: scale-to-fit; padding-top: 20px;">
                     <ui:Label tabindex="-1" text="OKORI" display-tooltip-when-elided="true" name="Label" class="gogoname" style="padding-top: 0;" />
                 </ui:VisualElement>
                 <ui:VisualElement name="Bg" class="bgpj" style="flex-grow: 5; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/images/azul.png?fileID=2800000&amp;guid=40f1ac67e55054448abb101273e8465b&amp;type=3#azul&apos;);">
