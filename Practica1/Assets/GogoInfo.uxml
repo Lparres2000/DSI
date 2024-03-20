@@ -2,7 +2,7 @@
     <Style src="project://database/Assets/GogoInfoStyleSheet.uss?fileID=7433441132597879392&amp;guid=b7450a175da470844a52ec6d482dd607&amp;type=3#GogoInfoStyleSheet" />
     <ui:VisualElement name="GogoInfo" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/images/CajaInfoGogo.png?fileID=2800000&amp;guid=927c38dd07c787f478d376d9057e253e&amp;type=3#CajaInfoGogo&apos;); -unity-background-scale-mode: scale-to-fit; padding-top: 0;">
         <ui:Label tabindex="-1" text="HELLY" display-tooltip-when-elided="true" name="Label" class="gogoname" style="padding-top: 0; flex-grow: 1; flex-shrink: 1; -unity-text-align: upper-center; -unity-font: url(&apos;project://database/Assets/images/8-bit%20fortress.ttf?fileID=12800000&amp;guid=1b266afd63ae22341925a3c7365ba5d9&amp;type=3#8-bit fortress&apos;); -unity-font-definition: initial; color: rgb(255, 255, 255); font-size: 20px; padding-left: 0; padding-right: 0; padding-bottom: 0; margin-left: 0; margin-right: 0; margin-top: 10px; margin-bottom: 0;" />
-        <ui:VisualElement name="PointsList" style="flex-grow: 3; background-color: rgba(0, 0, 0, 0); flex-direction: row; padding-left: 50px; padding-right: 50px;">
+        <ui:VisualElement name="PointsList" style="flex-grow: 5; background-color: rgba(0, 0, 0, 0); flex-direction: row; padding-left: 35px; padding-right: 35px;">
             <ui:VisualElement name="Point" class="point" />
             <ui:VisualElement name="Point" class="point" />
             <ui:VisualElement name="Point" class="point" />
