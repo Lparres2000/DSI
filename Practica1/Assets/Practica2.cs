@@ -63,13 +63,13 @@ public class Practica2 : MonoBehaviour
 
             gogoPoints.Add(points);
             int i = Random.Range(0, points.Count);
-            while(i > 0)
-            {
-                Debug.Log(points.Count);
-                points[i].style.display = DisplayStyle.None;
-                points[i].style.unityBackgroundImageTintColor = new Color(255, 255, 0, 0);
-                i--;
-            }
+            //while(i > 0)
+            //{
+            //    Debug.Log(points.Count);
+            //    points[i].style.display = DisplayStyle.None;
+            //    points[i].style.unityBackgroundImageTintColor = new Color(255, 255, 0, 0);
+            //    i--;
+            //}
         }
 
 
