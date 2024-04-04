@@ -71,3 +71,7 @@
     padding-left: 0;
     padding-right: 0;
 }
+
+.gogoinfo {
+    flex-grow: 1;
+}

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Linq;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -51,6 +52,27 @@ public class Practica2 : MonoBehaviour
 
         Label title = rootVE.Query<Label>(className: "titleText");
         title.text = @"<b><gradient=""Gradiente"">SELECT YOUR GOGO</gradient></b>";
+
+        List<VisualElement> gogoInfo = rootVE.Query<VisualElement>(className: "gogoinfo").ToList();
+
+        List<List<VisualElement>> gogoPoints = new List<List<VisualElement>>();
+
+        foreach(var info in gogoInfo)
+        {
+            List<VisualElement> points = info.Query<VisualElement>(className: "point").ToList();
+
+            gogoPoints.Add(points);
+            int i = Random.Range(0, points.Count);
+            while(i > 0)
+            {
+                Debug.Log(points.Count);
+                points[i].style.display = DisplayStyle.None;
+                points[i].style.unityBackgroundImageTintColor = new Color(255, 255, 0, 0);
+                i--;
+            }
+        }
+
+
 
 
     }
