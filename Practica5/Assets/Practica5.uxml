@@ -1,0 +1,25 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="plantilla" src="project://database/Assets/plantilla.uxml?fileID=9197481963319205126&amp;guid=3f9673657caccc74c9063e76bbd053a2&amp;type=3#plantilla" />
+    <ui:VisualElement name="contenedor" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+        <ui:VisualElement name="top" style="flex-grow: 1; background-color: rgb(51, 137, 86);">
+            <ui:VisualElement name="header" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row;">
+                <ui:VisualElement name="gogo1" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/GogosImages/Hellyvector.png?fileID=2800000&amp;guid=2de433cfc9ddfa24eb86579adb0b814a&amp;type=3#Hellyvector&apos;);" />
+                <ui:VisualElement name="gogo2" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/GogosImages/Nekovector.png?fileID=2800000&amp;guid=4cf9a5e7151160c43a519a51d5ae6a3c&amp;type=3#Nekovector&apos;); align-self: auto;" />
+                <ui:VisualElement name="gogo3" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/GogosImages/Okorivector.png?fileID=2800000&amp;guid=85d6d9f713d95de41aab2a579151aead&amp;type=3#Okorivector&apos;);" />
+                <ui:VisualElement name="gogo4" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/GogosImages/Yuzavector.png?fileID=2800000&amp;guid=4327fd4f6e462ec48ab9368d31ae5a97&amp;type=3#Yuzavector&apos;);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="body" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                <ui:TextField picking-mode="Ignore" label="Text Field" value="filler text" name="inputnombre" />
+            </ui:VisualElement>
+            <ui:VisualElement name="footer" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: none;">
+                <ui:TextField picking-mode="Ignore" label="Text Field" value="filler text" name="inputapellido" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="down" style="flex-grow: 1; background-color: rgb(168, 82, 82); flex-direction: row;">
+            <ui:Instance template="plantilla" name="plantilla1" style="flex-grow: 1; border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);" />
+            <ui:Instance template="plantilla" name="plantilla2" style="flex-grow: 1; border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);" />
+            <ui:Instance template="plantilla" name="plantilla3" style="flex-grow: 1; border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);" />
+            <ui:Instance template="plantilla" name="plantilla4" style="flex-grow: 1; border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

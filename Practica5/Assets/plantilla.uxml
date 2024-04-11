@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="plantilla" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: column;">
+        <ui:VisualElement name="header" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); align-self: auto;">
+            <ui:VisualElement name="gogoimage" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); align-self: auto;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="body" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="nombre" style="align-items: stretch; align-self: center;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="footer" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="apellido" style="align-self: center;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
