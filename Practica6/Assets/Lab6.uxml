@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="Contenedor" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row;">
+        <ui:VisualElement name="Izda" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+            <ui:VisualElement name="top" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+                <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="mid-nombre" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                <ui:TextField picking-mode="Ignore" label="Text Field" value="filler text" name="InputNombre" />
+            </ui:VisualElement>
+            <ui:VisualElement name="mid-apellido" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                <ui:TextField picking-mode="Ignore" label="Text Field" value="filler text" name="InputApellido" />
+            </ui:VisualElement>
+            <ui:VisualElement name="bottom" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                <ui:Toggle label="Toggle" name="ToggleModificar" />
+                <ui:Button text="Button" display-tooltip-when-elided="true" name="BotonCrear" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Dcha" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+    </ui:VisualElement>
+</ui:UXML>
