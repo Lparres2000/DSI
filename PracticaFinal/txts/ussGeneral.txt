@@ -1,0 +1,4 @@
+.BG {
+    flex-grow: 1;
+    background-image: url('project://database/Assets/Sprites/BG.png?fileID=2800000&guid=7fd8e1428520c974f9e05eebb9fea236&type=3#BG');
+}

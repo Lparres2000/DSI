@@ -1,4 +1,4 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/General.uss?fileID=7433441132597879392&amp;guid=77ffbf867a6542e46b94ac39eb31e853&amp;type=3#General" />
     <Style src="project://database/Assets/Bars.uss?fileID=7433441132597879392&amp;guid=7ea47563c5ff8364ca727cfd271656e8&amp;type=3#Bars" />
     <Style src="project://database/Assets/Shop.uss?fileID=7433441132597879392&amp;guid=ad07be14e39d96b48ab3a254b08e67f9&amp;type=3#Shop" />
