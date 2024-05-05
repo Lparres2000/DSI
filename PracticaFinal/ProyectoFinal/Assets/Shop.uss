@@ -49,10 +49,6 @@
     font-size: 8px;
 }
 
-.ProductAttibutes {
-    flex-grow: 2;
-}
-
 .ProductPriceTag {
     flex-grow: 1;
     background-image: url('project://database/Assets/Sprites/Tienda/Price.png?fileID=2800000&guid=c7706e0c05906994e82d13809561e7be&type=3#Price');
