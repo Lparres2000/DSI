@@ -1,0 +1,61 @@
+.Shop {
+    flex-grow: 6;
+    background-image: url('project://database/Assets/Sprites/Tienda/ShopBG.png?fileID=2800000&guid=028f214c6c0c161419b70990a83e4d85&type=3#ShopBG');
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    -unity-background-scale-mode: stretch-to-fill;
+    flex-direction: row;
+}
+
+.ColumnOfProducts {
+    flex-grow: 1;
+}
+
+.Product {
+    flex-grow: 1;
+    flex-direction: row;
+}
+
+.ProductIcon {
+    flex-grow: 1;
+    background-image: url('project://database/Assets/Sprites/Objetos%20usados/PocionMediana.png?fileID=2800000&guid=7aeada4681dd5904d887bd7f7d13242e&type=3#PocionMediana');
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.ProductDescription {
+    flex-grow: 3;
+    background-image: url('project://database/Assets/Sprites/Tienda/ProductBG.png?fileID=2800000&guid=4d0f5945ff841df4ea01f719c642ed14&type=3#ProductBG');
+    -unity-background-scale-mode: scale-to-fit;
+    flex-direction: row;
+}
+
+.ProductInfo {
+    flex-grow: 3;
+    justify-content: space-around;
+    align-items: stretch;
+    align-self: flex-start;
+}
+
+.ProductName {
+    flex-grow: 1;
+    background-image: url('project://database/Assets/Sprites/Textos/PocionMediana.png?fileID=2800000&guid=fb5874f56b5657f41ba1431da955b6f0&type=3#PocionMediana');
+    -unity-background-scale-mode: scale-to-fit;
+    font-size: 8px;
+}
+
+.ProductAttibutes {
+    flex-grow: 2;
+}
+
+.ProductPriceTag {
+    flex-grow: 1;
+    background-image: url('project://database/Assets/Sprites/Tienda/Price.png?fileID=2800000&guid=c7706e0c05906994e82d13809561e7be&type=3#Price');
+    -unity-background-scale-mode: scale-to-fit;
+    margin-right: 5px;
+}

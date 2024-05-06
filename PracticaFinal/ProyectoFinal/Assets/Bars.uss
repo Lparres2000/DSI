@@ -1,0 +1,24 @@
+.BarsDivision {
+    flex-grow: 1;
+    flex-direction: row;
+}
+
+.IndividualBar {
+    flex-grow: 1;
+    -unity-background-scale-mode: scale-to-fit;
+    margin-left: 15px;
+    margin-right: 10px;
+    flex-direction: row;
+}
+
+.BarIcon {
+    flex-grow: 1;
+    -unity-background-scale-mode: scale-to-fit;
+    margin-left: -10px;
+}
+
+.BarSlider {
+    flex-grow: 9;
+    -unity-background-scale-mode: scale-to-fit;
+    margin-right: 5px;
+}
