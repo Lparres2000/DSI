@@ -10,13 +10,13 @@
                 <ui:VisualElement name="Icon" class="BarIcon" style="background-image: url(&apos;project://database/Assets/Sprites/Pixel%20Art%20Icon%20Pack%20-%20RPG/Misc/Heart.png?fileID=2800000&amp;guid=bfd062f34c9b8e149aa11c530b95fd6e&amp;type=3#Heart&apos;);" />
                 <ui:Slider picking-mode="Ignore" value="100" high-value="100" show-input-field="false" focusable="true" name="Percentage" inverted="false" class="BarSlider" style="background-image: url(&apos;project://database/Assets/Sprites/Barras/LifeBar.png?fileID=2800000&amp;guid=206292dba79631848934661822b264b9&amp;type=3#LifeBar&apos;);" />
             </ui:VisualElement>
-            <ui:VisualElement name="StrenghBar" class="IndividualBar" style="background-image: url(&apos;project://database/Assets/Sprites/Barras/StateBar.png?fileID=2800000&amp;guid=e9692cef5227e95439ff6f2e0c7c1f17&amp;type=3#StateBar&apos;);">
-                <ui:VisualElement name="Icon" class="BarIcon" style="background-image: url(&apos;project://database/Assets/Sprites/Objetos%20usados/Iconos_CustomControls/IconoEscudo.png?fileID=2800000&amp;guid=12fc1d509bbebb14cbcb8d1f45ff49f5&amp;type=3#IconoEscudo&apos;);" />
-                <ui:Slider picking-mode="Ignore" value="100" high-value="100" show-input-field="false" focusable="true" name="Percentage" inverted="false" class="BarSlider" style="background-image: url(&apos;project://database/Assets/Sprites/Barras/ShieldBar.png?fileID=2800000&amp;guid=fab0415a55e985e49aa7a61ad32855ff&amp;type=3#ShieldBar&apos;);" />
-            </ui:VisualElement>
             <ui:VisualElement name="EnergyBar" class="IndividualBar" style="background-image: url(&apos;project://database/Assets/Sprites/Barras/StateBar.png?fileID=2800000&amp;guid=e9692cef5227e95439ff6f2e0c7c1f17&amp;type=3#StateBar&apos;);">
                 <ui:VisualElement name="Icon" class="BarIcon" style="background-image: url(&apos;project://database/Assets/Sprites/Pixel%20Art%20Icon%20Pack%20-%20RPG/Potion/Green%20Potion.png?fileID=2800000&amp;guid=3a51a203f878f724c9ee9eea4222bbd5&amp;type=3#Green Potion&apos;);" />
                 <ui:Slider picking-mode="Ignore" value="100" high-value="100" show-input-field="false" focusable="true" name="Percentage" inverted="false" class="BarSlider" style="background-image: url(&apos;project://database/Assets/Sprites/Barras/EnergyBar.png?fileID=2800000&amp;guid=18783d95b2822504887e1eb0c14b66f8&amp;type=3#EnergyBar&apos;);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="StrenghBar" class="IndividualBar" style="background-image: url(&apos;project://database/Assets/Sprites/Barras/StateBar.png?fileID=2800000&amp;guid=e9692cef5227e95439ff6f2e0c7c1f17&amp;type=3#StateBar&apos;);">
+                <ui:VisualElement name="Icon" class="BarIcon" style="background-image: url(&apos;project://database/Assets/Sprites/Objetos%20usados/Iconos_CustomControls/IconoEscudo.png?fileID=2800000&amp;guid=12fc1d509bbebb14cbcb8d1f45ff49f5&amp;type=3#IconoEscudo&apos;);" />
+                <ui:Slider picking-mode="Ignore" value="100" high-value="100" show-input-field="false" focusable="true" name="Percentage" inverted="false" class="BarSlider" style="background-image: url(&apos;project://database/Assets/Sprites/Barras/ShieldBar.png?fileID=2800000&amp;guid=fab0415a55e985e49aa7a61ad32855ff&amp;type=3#ShieldBar&apos;);" />
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="Shop" class="Shop" style="flex-grow: 1;">
@@ -38,23 +38,23 @@
                 <ui:Instance template="ProductoTemplate" name="ProductoTemplate" />
                 <ui:Instance template="ProductoTemplate" name="ProductoTemplate" />
             </ui:VisualElement>
-            <ui:VisualElement name="Col2" class="ColumnOfProducts" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+            <ui:VisualElement name="Col2" class="ColumnOfProducts">
                 <ui:Instance template="ProductoTemplate" name="ProductoTemplate" />
                 <ui:Instance template="ProductoTemplate" name="ProductoTemplate" />
                 <ui:Instance template="ProductoTemplate" name="ProductoTemplate" />
                 <ui:Instance template="ProductoTemplate" name="ProductoTemplate" />
             </ui:VisualElement>
         </ui:VisualElement>
-        <ui:VisualElement name="Inventory" class="Inventory" style="flex-grow: 2;">
+        <ui:VisualElement name="Inventory" class="Inventory" >
             <ui:VisualElement name="Money" class="MoneySlot" />
             <ui:VisualElement name="Slot1" class="ProductSlot" />
-            <ui:VisualElement name="Slot2" class="ProductSlot" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Sprites/Inventario/InvBGObj.png?fileID=2800000&amp;guid=cbe5fe41fa7d554409eeca63bf046753&amp;type=3#InvBGObj&apos;); -unity-background-scale-mode: scale-to-fit; margin-left: 2px; margin-right: 2px;" />
-            <ui:VisualElement name="Slot3" class="ProductSlot" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Sprites/Inventario/InvBGObj.png?fileID=2800000&amp;guid=cbe5fe41fa7d554409eeca63bf046753&amp;type=3#InvBGObj&apos;); -unity-background-scale-mode: scale-to-fit; margin-left: 2px; margin-right: 2px;" />
-            <ui:VisualElement name="Slot4" class="ProductSlot" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Sprites/Inventario/InvBGObj.png?fileID=2800000&amp;guid=cbe5fe41fa7d554409eeca63bf046753&amp;type=3#InvBGObj&apos;); -unity-background-scale-mode: scale-to-fit; margin-left: 2px; margin-right: 2px;" />
-            <ui:VisualElement name="Slot5" class="ProductSlot" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Sprites/Inventario/InvBGObj.png?fileID=2800000&amp;guid=cbe5fe41fa7d554409eeca63bf046753&amp;type=3#InvBGObj&apos;); border-top-width: 0; margin-left: 2px; margin-right: 2px; margin-top: 0; margin-bottom: 0; -unity-background-scale-mode: scale-to-fit;" />
-            <ui:VisualElement name="Slot6" class="ProductSlot" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Sprites/Inventario/InvBGObj.png?fileID=2800000&amp;guid=cbe5fe41fa7d554409eeca63bf046753&amp;type=3#InvBGObj&apos;); -unity-background-scale-mode: scale-to-fit; margin-left: 2px; margin-right: 2px;" />
-            <ui:VisualElement name="Slot7" class="ProductSlot" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Sprites/Inventario/InvBGObj.png?fileID=2800000&amp;guid=cbe5fe41fa7d554409eeca63bf046753&amp;type=3#InvBGObj&apos;); -unity-background-scale-mode: scale-to-fit; margin-left: 2px; margin-right: 2px;" />
-            <ui:VisualElement name="Slot8" class="ProductSlot" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Sprites/Inventario/InvBGObj.png?fileID=2800000&amp;guid=cbe5fe41fa7d554409eeca63bf046753&amp;type=3#InvBGObj&apos;); -unity-background-scale-mode: scale-to-fit; margin-right: 7px; margin-left: 2px;" />
+            <ui:VisualElement name="Slot2" class="ProductSlot" />
+            <ui:VisualElement name="Slot3" class="ProductSlot" />
+            <ui:VisualElement name="Slot4" class="ProductSlot" />
+            <ui:VisualElement name="Slot5" class="ProductSlot" />
+            <ui:VisualElement name="Slot6" class="ProductSlot" />
+            <ui:VisualElement name="Slot7" class="ProductSlot" />
+            <ui:VisualElement name="Slot8" class="ProductSlot" style="margin-right: 7px;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

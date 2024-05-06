@@ -16,12 +16,15 @@ namespace Lab6_namespace
 
         Label apellidoLabel;
 
+        VisualElement image;
+
         public Tarjeta(VisualElement tarjetaRoot, Individuo individuo) {
             this.tarjetaRoot = tarjetaRoot;
             this.miIndividuo = individuo;
             
             nombreLabel = tarjetaRoot.Q<Label>("Nombre");
             apellidoLabel = tarjetaRoot.Q<Label>("Apellido");
+            image = tarjetaRoot.Q<VisualElement>("Imagen");
             tarjetaRoot.userData = miIndividuo;
             UpdateUI();
 
@@ -34,6 +37,8 @@ namespace Lab6_namespace
 
             nombreLabel.text = miIndividuo.Nombre;
             apellidoLabel.text = miIndividuo.Apellido;
+            image.style.backgroundImage = miIndividuo.Imagen;
+            Debug.Log(image.style.backgroundImage);
         }
     }
 }

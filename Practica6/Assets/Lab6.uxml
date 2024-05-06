@@ -1,9 +1,11 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <ui:VisualElement name="Contenedor" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row;">
         <ui:VisualElement name="Izda" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
-            <ui:VisualElement name="top" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
-                <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
-                <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+            <ui:VisualElement name="top" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row;">
+                <ui:VisualElement name="Imagen1" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/GogosImages/Hellyvector.png?fileID=2800000&amp;guid=2de433cfc9ddfa24eb86579adb0b814a&amp;type=3#Hellyvector&apos;);" />
+                <ui:VisualElement name="Imagen2" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/GogosImages/Nekovector.png?fileID=2800000&amp;guid=4cf9a5e7151160c43a519a51d5ae6a3c&amp;type=3#Nekovector&apos;);" />
+                <ui:VisualElement name="Imagen3" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/GogosImages/Okorivector.png?fileID=2800000&amp;guid=85d6d9f713d95de41aab2a579151aead&amp;type=3#Okorivector&apos;);" />
+                <ui:VisualElement name="Imagen4" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/GogosImages/Yuzavector.png?fileID=2800000&amp;guid=4327fd4f6e462ec48ab9368d31ae5a97&amp;type=3#Yuzavector&apos;);" />
             </ui:VisualElement>
             <ui:VisualElement name="mid-nombre" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
                 <ui:TextField picking-mode="Ignore" label="Text Field" value="filler text" name="InputNombre" />
