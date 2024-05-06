@@ -19,7 +19,7 @@
 
 .ProductSlot {
     flex-grow: 1;
-    background-image: url('project://database/Assets/Sprites/Inventario/InvBGObj.png?fileID=2800000&guid=cbe5fe41fa7d554409eeca63bf046753&type=3#InvBGObj');
+    background-image: url('project://database/Assets/Sprites/Inventario/InvBGmargen.png?fileID=2800000&guid=c57d829c760127c4b9e97be584853771&type=3#InvBGmargen');
     -unity-background-scale-mode: scale-to-fit;
     margin-left: 2px;
     margin-right: 2px;
