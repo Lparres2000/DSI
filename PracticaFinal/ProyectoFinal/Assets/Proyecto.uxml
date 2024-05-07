@@ -21,11 +21,11 @@
         </ui:VisualElement>
         <ui:VisualElement name="Shop" class="Shop" style="flex-grow: 1;">
             <ui:VisualElement name="Col1" class="ColumnOfProducts">
-                <ui:VisualElement name="ProductoTemplate">
+                <ui:VisualElement name="Product1">
                     <Style src="project://database/Assets/Resources/HeartsInfoStyleSheet.uss?fileID=7433441132597879392&amp;guid=bcf22bf6362a44a40a6ca6dc810026f8&amp;type=3#HeartsInfoStyleSheet" />
                     <ui:VisualElement name="Product" class="Product" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; height: auto;">
                         <ui:VisualElement name="Description" class="ProductDescription" style="flex-grow: 3; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Sprites/Tienda/ProductBGmargen.png?fileID=2800000&amp;guid=a8b8f9c6be7b8304e9500d9455aceb39&amp;type=3#ProductBGmargen&apos;); -unity-background-scale-mode: scale-to-fit; flex-direction: row;">
-                            <ui:VisualElement name="Icon" class="ProductIcon" style="flex-grow: 1.7; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Sprites/Pixel%20Art%20Icon%20Pack%20-%20RPG/Potion/Red%20Potion%203.png?fileID=2800000&amp;guid=babb019e5a1accb42ae4fb892784050a&amp;type=3#Red Potion 3&apos;); -unity-background-scale-mode: scale-to-fit; margin-right: 0; margin-left: 0; margin-top: 0; margin-bottom: 0;" />
+                            <ui:VisualElement name="Icon" class="ProductIcon" style="flex-grow: 1.7; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Sprites/Objetos%20usados/Iconos_CustomControls/PocionIcono.png?fileID=2800000&amp;guid=ae3d8b8d8ac64654ca1393b9db23504a&amp;type=3#PocionIcono&apos;); -unity-background-scale-mode: scale-to-fit; margin-right: 0; margin-left: 0; margin-top: 0; margin-bottom: 0;" />
                             <ui:VisualElement name="Info" class="ProductInfo" style="flex-grow: 2; background-color: rgba(0, 0, 0, 0); justify-content: space-around; align-items: stretch; align-self: flex-start; margin-left: 5px; margin-top: 15px; margin-bottom: 15px; margin-right: 5px;">
                                 <ui:VisualElement name="Name" class="ProductName" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Sprites/Textos/PocionGrande.png?fileID=2800000&amp;guid=19b56fe54ac44d647867a29331c48629&amp;type=3#PocionGrande&apos;); -unity-background-scale-mode: scale-to-fit; margin-left: 0; font-size: 5px; padding-left: 0; margin-top: 0; align-items: auto; justify-content: flex-start; align-self: auto; white-space: nowrap; width: auto; height: auto;" />
                                 <AddHearts Hearts="4" Type="2" NumElems="2" style="flex-grow: 0; flex-shrink: 1; padding-left: 10px;" />
@@ -34,27 +34,43 @@
                         </ui:VisualElement>
                     </ui:VisualElement>
                 </ui:VisualElement>
-                <ui:Instance template="ProductoTemplate" name="ProductoTemplate" />
-                <ui:Instance template="ProductoTemplate" name="ProductoTemplate" />
-                <ui:Instance template="ProductoTemplate" name="ProductoTemplate" />
+                <ui:Instance template="ProductoTemplate" name="Product2" />
+                <ui:Instance template="ProductoTemplate" name="Product3" />
+                <ui:Instance template="ProductoTemplate" name="Product4" />
             </ui:VisualElement>
             <ui:VisualElement name="Col2" class="ColumnOfProducts">
-                <ui:Instance template="ProductoTemplate" name="ProductoTemplate" />
-                <ui:Instance template="ProductoTemplate" name="ProductoTemplate" />
-                <ui:Instance template="ProductoTemplate" name="ProductoTemplate" />
-                <ui:Instance template="ProductoTemplate" name="ProductoTemplate" />
+                <ui:Instance template="ProductoTemplate" name="Product5" />
+                <ui:Instance template="ProductoTemplate" name="Product6" />
+                <ui:Instance template="ProductoTemplate" name="Product7" />
+                <ui:Instance template="ProductoTemplate" name="Product8" />
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="Inventory" class="Inventory">
             <ui:VisualElement name="Money" class="MoneySlot" />
-            <ui:VisualElement name="Slot1" class="ProductSlot" />
-            <ui:VisualElement name="Slot2" class="ProductSlot" />
-            <ui:VisualElement name="Slot3" class="ProductSlot" />
-            <ui:VisualElement name="Slot4" class="ProductSlot" />
-            <ui:VisualElement name="Slot5" class="ProductSlot" />
-            <ui:VisualElement name="Slot6" class="ProductSlot" />
-            <ui:VisualElement name="Slot7" class="ProductSlot" />
-            <ui:VisualElement name="Slot8" class="ProductSlot" style="margin-right: 7px;" />
+            <ui:VisualElement name="Slot1" class="ProductSlot">
+                <ui:VisualElement name="Icon" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Slot2" class="ProductSlot">
+                <ui:VisualElement name="Icon" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Slot3" class="ProductSlot">
+                <ui:VisualElement name="Icon" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Slot4" class="ProductSlot">
+                <ui:VisualElement name="Icon" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Slot5" class="ProductSlot">
+                <ui:VisualElement name="Icon" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Slot6" class="ProductSlot">
+                <ui:VisualElement name="Icon" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Slot7" class="ProductSlot">
+                <ui:VisualElement name="Icon" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Slot8" class="ProductSlot" style="margin-right: 7px;">
+                <ui:VisualElement name="Icon" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+            </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

@@ -27,7 +27,6 @@ public class Compra : MonoBehaviour
     List<VisualElement> inventory = new List<VisualElement>();
 
     //Para definir la posición hasta donde está relleno el inventario
-    int[] slot_inventario = new int[8];
     int index = 0;
 
     private void OnEnable()
@@ -51,25 +50,16 @@ public class Compra : MonoBehaviour
         inventory.Add(slot5);
         inventory.Add(slot6);
         inventory.Add(slot7);   
-        inventory.Add(slot8);   
+        inventory.Add(slot8);
 
-        slot1.RegisterCallback<ClickEvent>(CompraProducto1);
-        slot2.RegisterCallback<ClickEvent>(CompraProducto2);
-        slot3.RegisterCallback<ClickEvent>(CompraProducto3);
-        slot4.RegisterCallback<ClickEvent>(CompraProducto4);
-        slot5.RegisterCallback<ClickEvent>(CompraProducto5);
-        slot6.RegisterCallback<ClickEvent>(CompraProducto6);
-        slot7.RegisterCallback<ClickEvent>(CompraProducto7);
-        slot8.RegisterCallback<ClickEvent>(CompraProducto8);
-
-        //input_producto1 = root.Q<VisualElement>("");
-        //input_producto2 = root.Q<VisualElement>("");
-        //input_producto3 = root.Q<VisualElement>("");
-        //input_producto4 = root.Q<VisualElement>("");
-        //input_producto5 = root.Q<VisualElement>("");
-        //input_producto6 = root.Q<VisualElement>("");
-        //input_producto7 = root.Q<VisualElement>("");
-        //input_producto8 = root.Q<VisualElement>("");
+        input_producto1 = root.Q<VisualElement>("Product1");
+        input_producto2 = root.Q<VisualElement>("Product2");
+        input_producto3 = root.Q<VisualElement>("Product3");
+        input_producto4 = root.Q<VisualElement>("Product4");
+        input_producto5 = root.Q<VisualElement>("Product5");
+        input_producto6 = root.Q<VisualElement>("Product6");
+        input_producto7 = root.Q<VisualElement>("Product7");
+        input_producto8 = root.Q<VisualElement>("Product8");
 
         input_producto1.RegisterCallback<ClickEvent>(CompraProducto1);
         input_producto2.RegisterCallback<ClickEvent>(CompraProducto2);
@@ -83,35 +73,51 @@ public class Compra : MonoBehaviour
 
     void CompraProducto1(ClickEvent evt)
     {
-        //VisualElement productImage = inventory.Query<VisualElement>("Product").AtIndex(index);
+        StyleBackground productImage = input_producto1.Q<VisualElement>("Icon").resolvedStyle.backgroundImage;
+        inventory[index].Q<VisualElement>("Icon").style.backgroundImage = productImage;
+        index++;
     }
     void CompraProducto2(ClickEvent evt)
     {
-
+        StyleBackground productImage = input_producto2.Q<VisualElement>("Icon").resolvedStyle.backgroundImage;
+        inventory[index].Q<VisualElement>("Icon").style.backgroundImage = productImage;
+        index++;
     }
     void CompraProducto3(ClickEvent evt)
     {
-
+        StyleBackground productImage = input_producto3.Q<VisualElement>("Icon").resolvedStyle.backgroundImage;
+        inventory[index].Q<VisualElement>("Icon").style.backgroundImage = productImage;
+        index++;
     }
     void CompraProducto4(ClickEvent evt)
     {
-
+        StyleBackground productImage = input_producto4.Q<VisualElement>("Icon").resolvedStyle.backgroundImage;
+        inventory[index].Q<VisualElement>("Icon").style.backgroundImage = productImage;
+        index++;
     }
     void CompraProducto5(ClickEvent evt)
     {
-
+        StyleBackground productImage = input_producto5.Q<VisualElement>("Icon").resolvedStyle.backgroundImage;
+        inventory[index].Q<VisualElement>("Icon").style.backgroundImage = productImage;
+        index++;
     }
     void CompraProducto6(ClickEvent evt)
     {
-
+        StyleBackground productImage = input_producto6.Q<VisualElement>("Icon").resolvedStyle.backgroundImage;
+        inventory[index].Q<VisualElement>("Icon").style.backgroundImage = productImage;
+        index++;
     }
     void CompraProducto7(ClickEvent evt)
     {
-
+        StyleBackground productImage = input_producto7.Q<VisualElement>("Icon").resolvedStyle.backgroundImage;
+        inventory[index].Q<VisualElement>("Icon").style.backgroundImage = productImage;
+        index++;
     }
     void CompraProducto8(ClickEvent evt)
     {
-
+        StyleBackground productImage = input_producto8.Q<VisualElement>("Icon").resolvedStyle.backgroundImage;
+        inventory[index].Q<VisualElement>("Icon").style.backgroundImage = productImage;
+        index++;
     }
 
 
