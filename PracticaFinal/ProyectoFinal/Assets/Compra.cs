@@ -31,8 +31,6 @@ public class Compra : MonoBehaviour
     Label textoDinero;
     int dinero = 1000;
 
-    String soldOut = " ";
-
     //Para definir la posición hasta donde está relleno el inventario
     int index = 0;
 
@@ -78,14 +76,14 @@ public class Compra : MonoBehaviour
         input_producto8.RegisterCallback<ClickEvent>(CompraProducto8);
 
 
-        //textoDinero = root.Q<Label>("MoneyAmount");
-        //textoDinero.text = dinero.ToString();
+        textoDinero = root.Q<Label>("MoneyAmount");
+        textoDinero.text = dinero.ToString();
     }
 
     void CompraProducto1(ClickEvent evt)
     {
-        //if (input_producto1.Q<VisualElement>("Icon").style.unityBackgroundImageTintColor != color1 &&
-        //    int.Parse(input_producto1.Q<Button>("Button").text) <= dinero)
+        if (input_producto1.Q<VisualElement>("Icon").style.opacity != 0.5f &&
+            int.Parse(input_producto1.Q<Button>("Button").text) <= dinero)
         {
             StyleBackground productImage = input_producto1.Q<VisualElement>("Icon").resolvedStyle.backgroundImage;
             inventory[index].Q<VisualElement>("Icon").style.backgroundImage = productImage;
@@ -107,13 +105,15 @@ public class Compra : MonoBehaviour
     }
     void CompraProducto2(ClickEvent evt)
     {
-        if (int.Parse(input_producto1.Q<Button>("Button").text) <= dinero) {
+        if (input_producto2.Q<VisualElement>("Icon").style.opacity != 0.5f &&
+            int.Parse(input_producto2.Q<Button>("Button").text) <= dinero)
+        {
             StyleBackground productImage = input_producto2.Q<VisualElement>("Icon").resolvedStyle.backgroundImage;
             inventory[index].Q<VisualElement>("Icon").style.backgroundImage = productImage;
             index++;
 
-            dinero -= int.Parse(input_producto1.Q<Button>("Button").text);
-            textoDinero.text = dinero.ToString();
+            //dinero -= int.Parse(input_producto1.Q<Button>("Button").text);
+            //textoDinero.text = dinero.ToString();
 
             //Icono
             input_producto2.Q<VisualElement>("Icon").style.opacity = 0.5f;
@@ -128,13 +128,15 @@ public class Compra : MonoBehaviour
     }
     void CompraProducto3(ClickEvent evt)
     {
-        if (int.Parse(input_producto1.Q<Button>("Button").text) <= dinero) {
+        if (input_producto3.Q<VisualElement>("Icon").style.opacity != 0.5f &&
+            int.Parse(input_producto3.Q<Button>("Button").text) <= dinero)
+        {
             StyleBackground productImage = input_producto3.Q<VisualElement>("Icon").resolvedStyle.backgroundImage;
             inventory[index].Q<VisualElement>("Icon").style.backgroundImage = productImage;
             index++;
 
-            dinero -= int.Parse(input_producto1.Q<Button>("Button").text);
-            textoDinero.text = dinero.ToString();
+            //dinero -= int.Parse(input_producto1.Q<Button>("Button").text);
+            //textoDinero.text = dinero.ToString();
 
             //Icono
             input_producto3.Q<VisualElement>("Icon").style.opacity = 0.5f;
@@ -149,13 +151,15 @@ public class Compra : MonoBehaviour
     }
     void CompraProducto4(ClickEvent evt)
     {
-        if (int.Parse(input_producto1.Q<Button>("Button").text) <= dinero) {
+        if (input_producto4.Q<VisualElement>("Icon").style.opacity != 0.5f &&
+            int.Parse(input_producto4.Q<Button>("Button").text) <= dinero)
+        {
             StyleBackground productImage = input_producto4.Q<VisualElement>("Icon").resolvedStyle.backgroundImage;
             inventory[index].Q<VisualElement>("Icon").style.backgroundImage = productImage;
             index++;
 
-            dinero -= int.Parse(input_producto1.Q<Button>("Button").text);
-            textoDinero.text = dinero.ToString();
+            //dinero -= int.Parse(input_producto1.Q<Button>("Button").text);
+            //textoDinero.text = dinero.ToString();
 
             //Icono
             input_producto4.Q<VisualElement>("Icon").style.opacity = 0.5f;
@@ -170,13 +174,15 @@ public class Compra : MonoBehaviour
     }
     void CompraProducto5(ClickEvent evt)
     {
-        if (int.Parse(input_producto1.Q<Button>("Button").text) <= dinero) {
+        if (input_producto5.Q<VisualElement>("Icon").style.opacity != 0.5f &&
+            int.Parse(input_producto5.Q<Button>("Button").text) <= dinero)
+        {
             StyleBackground productImage = input_producto5.Q<VisualElement>("Icon").resolvedStyle.backgroundImage;
             inventory[index].Q<VisualElement>("Icon").style.backgroundImage = productImage;
             index++;
 
-            dinero -= int.Parse(input_producto1.Q<Button>("Button").text);
-            textoDinero.text = dinero.ToString();
+            //dinero -= int.Parse(input_producto1.Q<Button>("Button").text);
+            //textoDinero.text = dinero.ToString();
 
             //Icono
             input_producto5.Q<VisualElement>("Icon").style.opacity = 0.5f;
@@ -191,13 +197,15 @@ public class Compra : MonoBehaviour
     }
     void CompraProducto6(ClickEvent evt)
     {
-        if (int.Parse(input_producto1.Q<Button>("Button").text) <= dinero) {
+        if (input_producto6.Q<VisualElement>("Icon").style.opacity != 0.5f &&
+            int.Parse(input_producto6.Q<Button>("Button").text) <= dinero)
+        {
             StyleBackground productImage = input_producto6.Q<VisualElement>("Icon").resolvedStyle.backgroundImage;
             inventory[index].Q<VisualElement>("Icon").style.backgroundImage = productImage;
             index++;
 
-            dinero -= int.Parse(input_producto1.Q<Button>("Button").text);
-            textoDinero.text = dinero.ToString();
+            //dinero -= int.Parse(input_producto1.Q<Button>("Button").text);
+            //textoDinero.text = dinero.ToString();
 
             //Icono
             input_producto6.Q<VisualElement>("Icon").style.opacity = 0.5f;
@@ -212,13 +220,15 @@ public class Compra : MonoBehaviour
     }
     void CompraProducto7(ClickEvent evt)
     {
-        if (int.Parse(input_producto1.Q<Button>("Button").text) <= dinero) {
+        if (input_producto7.Q<VisualElement>("Icon").style.opacity != 0.5f &&
+            int.Parse(input_producto7.Q<Button>("Button").text) <= dinero)
+        {
             StyleBackground productImage = input_producto7.Q<VisualElement>("Icon").resolvedStyle.backgroundImage;
             inventory[index].Q<VisualElement>("Icon").style.backgroundImage = productImage;
             index++;
 
-            dinero -= int.Parse(input_producto1.Q<Button>("Button").text);
-            textoDinero.text = dinero.ToString();
+            //dinero -= int.Parse(input_producto1.Q<Button>("Button").text);
+            //textoDinero.text = dinero.ToString();
 
             //Icono
             input_producto7.Q<VisualElement>("Icon").style.opacity = 0.5f;
@@ -233,13 +243,15 @@ public class Compra : MonoBehaviour
     }
     void CompraProducto8(ClickEvent evt)
     {
-        if (int.Parse(input_producto1.Q<Button>("Button").text) <= dinero) {
+        if (input_producto8.Q<VisualElement>("Icon").style.opacity != 0.5f &&
+            int.Parse(input_producto8.Q<Button>("Button").text) <= dinero)
+        {
             StyleBackground productImage = input_producto8.Q<VisualElement>("Icon").resolvedStyle.backgroundImage;
             inventory[index].Q<VisualElement>("Icon").style.backgroundImage = productImage;
             index++;
 
-            dinero -= int.Parse(input_producto1.Q<Button>("Button").text);
-            textoDinero.text = dinero.ToString();
+            //dinero -= int.Parse(input_producto1.Q<Button>("Button").text);
+            //textoDinero.text = dinero.ToString();
 
             //Icono
             input_producto8.Q<VisualElement>("Icon").style.opacity = 0.5f;
