@@ -18,7 +18,7 @@ public class Sliders : MonoBehaviour
         {
             //Escondemos el agarre y la barrita del slider, que quedan feísimas
             VisualElement dragger = slider.Q<VisualElement>("unity-dragger");
-            dragger.style.display = DisplayStyle.None;
+            //dragger.style.display = DisplayStyle.None;
 
             VisualElement tracker = slider.Q<VisualElement>("unity-tracker");
             tracker.style.display = DisplayStyle.None;
