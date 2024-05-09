@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -6,8 +7,6 @@ using UnityEngine.UIElements;
 
 public class Compra : MonoBehaviour
 {
-    [SerializeField] Texture2D soldOutButton;
-
     //Plantillas donde ponemos los productos
     VisualElement slot1;
     VisualElement slot2;
@@ -31,6 +30,8 @@ public class Compra : MonoBehaviour
 
     Label textoDinero;
     int dinero = 1000;
+
+    String soldOut = " ";
 
     //Para definir la posición hasta donde está relleno el inventario
     int index = 0;
@@ -93,14 +94,14 @@ public class Compra : MonoBehaviour
             //dinero -= int.Parse(input_producto1.Q<Button>("Button").text);
             //textoDinero.text = dinero.ToString();
 
-            Color color1 = new Color(0, 0, 0, 0.5f);
             //Icono
-            input_producto1.Q<VisualElement>("Icon").style.unityBackgroundImageTintColor = new StyleColor(color1);
+            input_producto1.Q<VisualElement>("Icon").style.opacity = 0.5f;
             //PriceTag
             input_producto1.Q<VisualElement>("Button").style.backgroundImage = new StyleBackground(Resources.Load<Sprite>("PriceSoldOut"));
-            //input_producto1.Q<VisualElement>("Button").style.unityBackgroundImageTintColor = new StyleColor(color1);
+            input_producto1.Q<VisualElement>("Button").style.opacity = 0.5f;
+            //input_producto1.Q<VisualElement>("Button").style.textOverflow = soldOut;
             //Fondo
-            input_producto1.Q<VisualElement>("Product").style.unityBackgroundImageTintColor = new StyleColor(color1);
+            input_producto1.Q<VisualElement>("Product").style.opacity = 0.5f;
         }
         
     }
@@ -114,14 +115,14 @@ public class Compra : MonoBehaviour
             dinero -= int.Parse(input_producto1.Q<Button>("Button").text);
             textoDinero.text = dinero.ToString();
 
-            Color color1 = new Color(0, 0, 0, 0.5f);
             //Icono
-            input_producto2.Q<VisualElement>("Icon").style.unityBackgroundImageTintColor = new StyleColor(color1);
+            input_producto2.Q<VisualElement>("Icon").style.opacity = 0.5f;
             //PriceTag
             input_producto2.Q<VisualElement>("Button").style.backgroundImage = new StyleBackground(Resources.Load<Sprite>("PriceSoldOut"));
-            //input_producto2.Q<VisualElement>("Button").style.unityBackgroundImageTintColor = new StyleColor(color1);
+            input_producto2.Q<VisualElement>("Button").style.opacity = 0.5f;
+            //input_producto2.Q<VisualElement>("Button").style.textOverflow = soldOut;
             //Fondo
-            input_producto2.Q<VisualElement>("Product").style.unityBackgroundImageTintColor = new StyleColor(color1);
+            input_producto2.Q<VisualElement>("Product").style.opacity = 0.5f;
         }
         
     }
@@ -135,14 +136,14 @@ public class Compra : MonoBehaviour
             dinero -= int.Parse(input_producto1.Q<Button>("Button").text);
             textoDinero.text = dinero.ToString();
 
-            Color color1 = new Color(0, 0, 0, 0.5f);
             //Icono
-            input_producto3.Q<VisualElement>("Icon").style.unityBackgroundImageTintColor = new StyleColor(color1);
+            input_producto3.Q<VisualElement>("Icon").style.opacity = 0.5f;
             //PriceTag
             input_producto3.Q<VisualElement>("Button").style.backgroundImage = new StyleBackground(Resources.Load<Sprite>("PriceSoldOut"));
-            //input_producto3.Q<VisualElement>("Button").style.unityBackgroundImageTintColor = new StyleColor(color1);
+            input_producto3.Q<VisualElement>("Button").style.opacity = 0.5f;
+            //input_producto3.Q<VisualElement>("Button").style.textOverflow = soldOut;
             //Fondo
-            input_producto3.Q<VisualElement>("Product").style.unityBackgroundImageTintColor = new StyleColor(color1);
+            input_producto3.Q<VisualElement>("Product").style.opacity = 0.5f;
         }
         
     }
@@ -156,14 +157,14 @@ public class Compra : MonoBehaviour
             dinero -= int.Parse(input_producto1.Q<Button>("Button").text);
             textoDinero.text = dinero.ToString();
 
-            Color color1 = new Color(0, 0, 0, 0.5f);
             //Icono
-            input_producto4.Q<VisualElement>("Icon").style.unityBackgroundImageTintColor = new StyleColor(color1);
+            input_producto4.Q<VisualElement>("Icon").style.opacity = 0.5f;
             //PriceTag
             input_producto4.Q<VisualElement>("Button").style.backgroundImage = new StyleBackground(Resources.Load<Sprite>("PriceSoldOut"));
-            //input_producto4.Q<VisualElement>("Button").style.unityBackgroundImageTintColor = new StyleColor(color1);
+            input_producto4.Q<VisualElement>("Button").style.opacity = 0.5f;
+            //input_producto4.Q<VisualElement>("Button").style.textOverflow = soldOut;
             //Fondo
-            input_producto4.Q<VisualElement>("Product").style.unityBackgroundImageTintColor = new StyleColor(color1);
+            input_producto4.Q<VisualElement>("Product").style.opacity = 0.5f;
         }
         
     }
@@ -177,14 +178,14 @@ public class Compra : MonoBehaviour
             dinero -= int.Parse(input_producto1.Q<Button>("Button").text);
             textoDinero.text = dinero.ToString();
 
-            Color color1 = new Color(0, 0, 0, 0.5f);
             //Icono
-            input_producto5.Q<VisualElement>("Icon").style.unityBackgroundImageTintColor = new StyleColor(color1);
+            input_producto5.Q<VisualElement>("Icon").style.opacity = 0.5f;
             //PriceTag
             input_producto5.Q<VisualElement>("Button").style.backgroundImage = new StyleBackground(Resources.Load<Sprite>("PriceSoldOut"));
-            //input_producto5.Q<VisualElement>("Button").style.unityBackgroundImageTintColor = new StyleColor(color1);
+            input_producto5.Q<VisualElement>("Button").style.opacity = 0.5f;
+            //input_producto5.Q<VisualElement>("Button").style.textOverflow = soldOut;
             //Fondo
-            input_producto5.Q<VisualElement>("Product").style.unityBackgroundImageTintColor = new StyleColor(color1);
+            input_producto5.Q<VisualElement>("Product").style.opacity = 0.5f;
         }
         
     }
@@ -198,14 +199,14 @@ public class Compra : MonoBehaviour
             dinero -= int.Parse(input_producto1.Q<Button>("Button").text);
             textoDinero.text = dinero.ToString();
 
-            Color color1 = new Color(0, 0, 0, 0.5f);
             //Icono
-            input_producto6.Q<VisualElement>("Icon").style.unityBackgroundImageTintColor = new StyleColor(color1);
+            input_producto6.Q<VisualElement>("Icon").style.opacity = 0.5f;
             //PriceTag
             input_producto6.Q<VisualElement>("Button").style.backgroundImage = new StyleBackground(Resources.Load<Sprite>("PriceSoldOut"));
-            //input_producto6.Q<VisualElement>("Button").style.unityBackgroundImageTintColor = new StyleColor(color1);
+            input_producto6.Q<VisualElement>("Button").style.opacity = 0.5f;
+            //input_producto6.Q<VisualElement>("Button").style.textOverflow = soldOut;
             //Fondo
-            input_producto6.Q<VisualElement>("Product").style.unityBackgroundImageTintColor = new StyleColor(color1);
+            input_producto6.Q<VisualElement>("Product").style.opacity = 0.5f;
         }
         
     }
@@ -219,14 +220,14 @@ public class Compra : MonoBehaviour
             dinero -= int.Parse(input_producto1.Q<Button>("Button").text);
             textoDinero.text = dinero.ToString();
 
-            Color color1 = new Color(0, 0, 0, 0.5f);
             //Icono
-            input_producto7.Q<VisualElement>("Icon").style.unityBackgroundImageTintColor = new StyleColor(color1);
+            input_producto7.Q<VisualElement>("Icon").style.opacity = 0.5f;
             //PriceTag
             input_producto7.Q<VisualElement>("Button").style.backgroundImage = new StyleBackground(Resources.Load<Sprite>("PriceSoldOut"));
-            //input_producto7.Q<VisualElement>("Button").style.unityBackgroundImageTintColor = new StyleColor(color1);
+            input_producto7.Q<VisualElement>("Button").style.opacity = 0.5f;
+            //input_producto7.Q<VisualElement>("Button").style.textOverflow = soldOut;
             //Fondo
-            input_producto7.Q<VisualElement>("Product").style.unityBackgroundImageTintColor = new StyleColor(color1);
+            input_producto7.Q<VisualElement>("Product").style.opacity = 0.5f;
         }
         
     }
@@ -240,17 +241,19 @@ public class Compra : MonoBehaviour
             dinero -= int.Parse(input_producto1.Q<Button>("Button").text);
             textoDinero.text = dinero.ToString();
 
-            Color color1 = new Color(0, 0, 0, 0.5f);
             //Icono
-            input_producto8.Q<VisualElement>("Icon").style.unityBackgroundImageTintColor = new StyleColor(color1);
+            input_producto8.Q<VisualElement>("Icon").style.opacity = 0.5f;
             //PriceTag
             input_producto8.Q<VisualElement>("Button").style.backgroundImage = new StyleBackground(Resources.Load<Sprite>("PriceSoldOut"));
-            //input_producto8.Q<VisualElement>("Button").style.unityBackgroundImageTintColor = new StyleColor(color1);
+            input_producto8.Q<VisualElement>("Button").style.opacity = 0.5f;
+            //input_producto8.Q<VisualElement>("Button").style.textOverflow = soldOut;
             //Fondo
-            input_producto8.Q<VisualElement>("Product").style.unityBackgroundImageTintColor = new StyleColor(color1);
+            input_producto8.Q<VisualElement>("Product").style.opacity = 0.5f;
         }
         
     }
+
+
 
 
 }
