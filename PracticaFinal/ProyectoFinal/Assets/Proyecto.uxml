@@ -130,7 +130,7 @@
         </ui:VisualElement>
         <ui:VisualElement name="Inventory" class="Inventory" style="flex-grow: 2; flex-direction: row; flex-shrink: 1;">
             <ui:VisualElement name="Money" class="MoneySlot" style="flex-direction: column;">
-                <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" style="margin-top: 0; margin-bottom: 0; margin-right: 0; margin-left: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; -unity-text-align: upper-center; left: 0; top: 60%; right: 0; bottom: 0;" />
+                <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="MoneyAmount" style="margin-top: 0; margin-bottom: 0; margin-right: 0; margin-left: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; -unity-text-align: upper-center; left: 0; top: 60%; right: 0; bottom: 0; color: rgb(237, 255, 0);" />
             </ui:VisualElement>
             <ui:VisualElement name="Slot1" class="ProductSlot">
                 <ui:VisualElement name="Icon" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
